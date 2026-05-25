@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AttendancePage</class>
+ <widget class="QMainWindow" name="AttendancePage">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>480</width><height>700</height></rect>
+  </property>
+  <property name="windowTitle"><string>Посещаемость</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect><x>5</x><y>5</y><width>470</width><height>690</height></rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+
+     <item>
+      <widget class="QLabel" name="titleLabel">
+       <property name="text"><string>Посещаемость за семестр</string></property>
+       <property name="alignment"><set>Qt::AlignCenter</set></property>
+       <property name="font"><font><pointsize>12</pointsize><bold>true</bold></font></property>
+      </widget>
+     </item>
+
+     <!-- Иерархическое дерево вместо таблицы -->
+     <item>
+      <widget class="QTreeWidget" name="attendanceTree">
+       <column><property name="text"><string>Дата / Предмет</string></property></column>
+       <column><property name="text"><string>Статус</string></property></column>
+       <column><property name="text"><string>Неделя</string></property></column>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="summaryLabel">
+       <property name="text"><string>Загрузка...</string></property>
+       <property name="alignment"><set>Qt::AlignCenter</set></property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="text"><string>← Назад</string></property>
+      </widget>
+     </item>
+
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry"><rect><x>0</x><y>0</y><width>480</width><height>25</height></rect></property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

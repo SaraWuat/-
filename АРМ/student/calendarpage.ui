@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalendarPage</class>
+ <widget class="QMainWindow" name="CalendarPage">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>480</width><height>760</height></rect>
+  </property>
+  <property name="windowTitle"><string>Календарь</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect><x>5</x><y>5</y><width>470</width><height>750</height></rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QCalendarWidget" name="calendarWidget">
+       <property name="maximumSize">
+        <size><width>16777215</width><height>220</height></size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dateLabel">
+       <property name="text"><string>Выберите дату</string></property>
+       <property name="alignment"><set>Qt::AlignCenter</set></property>
+       <property name="font">
+        <font><pointsize>10</pointsize><bold>true</bold></font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="classesTable">
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="text"><string>← Назад</string></property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry"><rect><x>0</x><y>0</y><width>480</width><height>25</height></rect></property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

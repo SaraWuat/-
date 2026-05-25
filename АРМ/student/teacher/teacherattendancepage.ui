@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TeacherAttendancePage</class>
+ <widget class="QMainWindow" name="TeacherAttendancePage">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>860</width><height>580</height></rect></property>
+  <property name="windowTitle"><string>Посещаемость группы</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="lw">
+    <property name="geometry"><rect><x>5</x><y>5</y><width>850</width><height>570</height></rect></property>
+    <layout class="QVBoxLayout">
+
+     <item><layout class="QHBoxLayout">
+      <item><widget class="QLabel" name="titleLabel">
+       <property name="text"><string>Посещаемость группы</string></property>
+       <property name="font"><font><pointsize>11</pointsize><bold>true</bold></font></property>
+      </widget></item>
+      <item><spacer><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+      <item><widget class="QLabel" name="subjLabel2">
+       <property name="text"><string>Предмет:</string></property>
+       <property name="font"><font><bold>true</bold></font></property>
+      </widget></item>
+      <item><widget class="QComboBox" name="subjectCombo">
+       <property name="minimumWidth"><number>220</number></property>
+      </widget></item>
+     </layout></item>
+
+     <item><widget class="QLabel" name="subjectLabel">
+      <property name="text"><string></string></property>
+      <property name="styleSheet"><string>color: #555; font-style: italic;</string></property>
+     </widget></item>
+
+     <item><widget class="QLabel" name="hintLabel">
+      <property name="text"><string>Н — отсутствовал.  Пусто — был.  Итог: был/всего.</string></property>
+      <property name="styleSheet"><string>color: gray; font-size: 10px;</string></property>
+     </widget></item>
+
+     <item><widget class="QTableWidget" name="attTable"/></item>
+
+     <item><widget class="QPushButton" name="backButton">
+      <property name="text"><string>← Назад</string></property>
+     </widget></item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/><connections/>
+</ui>

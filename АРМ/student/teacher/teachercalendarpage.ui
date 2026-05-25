@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TeacherCalendarPage</class>
+ <widget class="QMainWindow" name="TeacherCalendarPage">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>520</width><height>640</height></rect></property>
+  <property name="windowTitle"><string>Моё расписание</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="lw">
+    <property name="geometry"><rect><x>5</x><y>5</y><width>510</width><height>630</height></rect></property>
+    <layout class="QVBoxLayout">
+     <item><widget class="QCalendarWidget" name="calendarWidget">
+      <property name="maximumSize"><size><width>16777215</width><height>240</height></size></property>
+     </widget></item>
+     <item><widget class="QLabel" name="dateLabel">
+      <property name="text"><string></string></property>
+      <property name="font"><font><bold>true</bold></font></property>
+     </widget></item>
+     <item><widget class="QTableView" name="classesTable">
+      <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+      <property name="selectionMode"><enum>QAbstractItemView::NoSelection</enum></property>
+     </widget></item>
+     <item><widget class="QPushButton" name="backButton">
+      <property name="text"><string>← Назад</string></property>
+     </widget></item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/><connections/>
+</ui>

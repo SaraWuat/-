@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TeacherJournalPage</class>
+ <widget class="QMainWindow" name="TeacherJournalPage">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>860</width><height>620</height></rect></property>
+  <property name="windowTitle"><string>Журнал группы</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="lw">
+    <property name="geometry"><rect><x>5</x><y>5</y><width>850</width><height>610</height></rect></property>
+    <layout class="QVBoxLayout">
+     <item><layout class="QHBoxLayout">
+      <item><widget class="QLabel" name="titleLabel">
+       <property name="text"><string>Журнал посещаемости и оценок</string></property>
+       <property name="font"><font><pointsize>11</pointsize><bold>true</bold></font></property>
+      </widget></item>
+      <item><spacer><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+      <item><widget class="QPushButton" name="refreshButton">
+       <property name="text"><string>🔄 Обновить</string></property>
+       <property name="maximumWidth"><number>110</number></property>
+      </widget></item>
+     </layout></item>
+     <item><widget class="QLabel" name="hintLabel">
+      <property name="text"><string>Двойной клик по ячейке — изменить оценку или посещаемость.  Н = отсутствовал.</string></property>
+      <property name="styleSheet"><string>color: gray; font-size: 10px;</string></property>
+     </widget></item>
+     <item><widget class="QTableWidget" name="journalTable"/></item>
+     <item><widget class="QPushButton" name="backButton">
+      <property name="text"><string>← Назад</string></property>
+     </widget></item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/><connections/>
+</ui>

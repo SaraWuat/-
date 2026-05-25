@@ -1,0 +1,16 @@
+-- Полная схема БД (справочный файл, БД уже создана gen_db.py)
+-- Роли: student, headman (student + is_headman), teacher, curator (teacher + is_curator)
+
+-- subjects: справочник предметов
+-- times: справочник временных слотов (8:00, 9:40, ...)
+-- teachers: преподаватели + кураторы (is_curator=1)
+-- learn_groups: группы, headman_id → students.id, curator_id → teachers.id
+-- students: студенты, email/password/token, group_id
+-- employee: логины преподавателей (email/password), teacher_id → teachers.id
+-- teacher_groups: преподаватель ведёт группу (M:M)
+-- classes: пары (group, subject, teacher, time, week_day, week[1/2/3], place, type[0лаб/1лек/2пр])
+-- journal_rec: запись журнала для пары (class_id, headman_accept, teacher_accept, dean_accept, date, theme)
+-- journal_rec_data: отсутствующие студенты (rec_id, student_id)
+-- grades: оценки (rec_id, student_id, grade 1-5)
+-- group_events: события группы (date yyyy-MM-dd, time HH:mm, title)
+-- group_holidays: выходные дни группы (date yyyy-MM-dd)

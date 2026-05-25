@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GradesPage</class>
+ <widget class="QMainWindow" name="GradesPage">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>500</width><height>650</height></rect></property>
+  <property name="windowTitle"><string>Мои оценки</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="lw">
+    <property name="geometry"><rect><x>5</x><y>5</y><width>490</width><height>640</height></rect></property>
+    <layout class="QVBoxLayout">
+     <item><widget class="QLabel" name="titleLabel">
+      <property name="text"><string>Мои оценки</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="font"><font><pointsize>12</pointsize><bold>true</bold></font></property>
+     </widget></item>
+     <item><widget class="QTreeWidget" name="gradesTree">
+      <column><property name="text"><string>Предмет / Тема</string></property></column>
+      <column><property name="text"><string>Дата</string></property></column>
+      <column><property name="text"><string>Оценка</string></property></column>
+      <column><property name="text"><string></string></property></column>
+     </widget></item>
+     <item><widget class="QPushButton" name="backButton">
+      <property name="text"><string>← Назад</string></property>
+     </widget></item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/><connections/>
+</ui>
